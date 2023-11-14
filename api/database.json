@@ -1,0 +1,107 @@
+{
+        "food": [
+            {
+                "id": 1,
+                "name": "Borsch",
+                "desc": "sour soup, made with meat stock, vegetables and seasonings",
+                "price": 7.50,
+                "image": "https://cdni.rbth.com/rbthmedia/images/2020.11/original/5fae437385600a67b20e8810.jpg",
+                "preptime": 10
+            },
+            {
+                "id": 2,
+                "name": "Mushroom soup",
+                "desc": "Creamy white soup with freshly cut mushrooms",
+                "price": 5,
+                "image": "https://lovingitvegan.com/wp-content/uploads/2016/10/Vegan-Cream-Of-Mushroom-Soup-7.jpg",
+                "preptime": 12
+            },
+            {
+                "id": 3,
+                "name": "Yushka",
+                "desc": "Fish soup",
+                "price": 6.40,
+                "image": "https://etnocook.com/wp-content/uploads/2022/01/cossacks_yushka.jpg.webp",
+                "preptime": 11
+            }
+        ],
+        "desserts": [
+            {
+                "id": 1,
+                "name": "Baked apples with nuts",
+                "desc": "Tart apples baked with crunchy nuts and spices",
+                "price": 4.5,
+                "image": "https://www.worthingcourtblog.com/wp-content/uploads/2019/08/baked-apples-6.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Syrnyki",
+                "desc": "Sweet, cheesy pancakes",
+                "price": 6.5,
+                "image": "https://natashaskitchen.com/wp-content/uploads/2013/10/Ukrainian-Syrniki-Recipe-3-2.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Crepes with cheese",
+                "desc": "Fluffy pancakes with fresh cheese inside",
+                "price": 7.2,
+                "image": "https://barefeetinthekitchen.com/wp-content/uploads/2017/02/2-ingredient-pancakes-8-1-of-1-1463x2048.jpg"
+            }
+        ],
+        "drinks": [
+            {
+                "id": 1,
+                "name": "Carpathian tea",
+                "desc": "Traditional ukrainian herb tea from Carpathian area",
+                "price": 3.5,
+                "image": "https://foodmedcenter.org/wp-content/uploads/shutterstock_88344277.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Lviv coffee",
+                "desc": "Natural coffee from Lviv with light caramel and wine notes",
+                "price": 3.7,
+                "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-1024x536.png"
+            },
+            {
+                "id": 3,
+                "name": "Mint tea",
+                "desc": "Fresh tea brewed with crisp mint",
+                "price": 3.5,
+                "image": "https://cdn.powerofpositivity.com/wp-content/uploads/2019/05/aromatic-close-cup-1417945.jpg"
+            }
+    ],
+    "location": [
+    {
+        "id": 1,
+        "name": "Hear the Anthem",
+        "desc": "Ukrainian cuisin",
+        "phone": "304-258-0891",
+        "hours": "Mon-Wed(8am-6pm), Fri-Sat(10am-8pm)"
+    }
+    ],
+    "admin": [
+    {
+        "id": 1,
+        "email": "Admin01@email.com",
+        "phone": "304-579-2204"
+    },
+    {
+        "id": 2,
+        "email": "Admin02@email.com",
+        "phone": "681-428-9631"
+    }
+    ],
+    "foodOrders": [
+        {}
+    ],
+    "drinkOrders": [
+        {}
+    ],
+    "dessertOrders": [
+        {}
+    ],
+    "orders": [
+        {}
+    ]
+}
