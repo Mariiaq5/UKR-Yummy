@@ -3,7 +3,7 @@ import { foodAPIData } from "../componentsAPImanager";
 import OrderFoodButton from "../orderButton/orderFood";
 
 
-export default function FoodSelects() {
+export default function FoodSelects({updateFoodState, setRefresh, refresh}) {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
@@ -12,6 +12,7 @@ export default function FoodSelects() {
       setFoods(foodArray)
     })
   }, [])
+
 
 const addFoodToCart = (food) => {
   fetch('http://localhost:8088/foodOrders', {
@@ -22,6 +23,15 @@ const addFoodToCart = (food) => {
       body: JSON.stringify({ foodId: food.id, orderId: 1 }), // Adjust the body based on your server requirements
     })
       .then((response) => response.json())
+      .then(() => {
+        foodAPIData()
+        .then((foodArray) => {
+         
+          let number =refresh + 1
+          setRefresh(number)
+          updateFoodState(foodArray)
+        })
+      })
 }
     return(
              <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">

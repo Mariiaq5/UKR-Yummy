@@ -1,9 +1,28 @@
+import { useEffect, useState } from 'react';
 import DessertSelects from '../menuSelects/dessertSelects';
 import DrinkSelects from '../menuSelects/drinkSelects';
 import FoodSelects from '../menuSelects/foodSelects';
 import './menuComponents.css'
+import { foodAPIData } from '../componentsAPImanager';
 
-export default function MenuComponents() {
+export const MenuComponents= ({setRefresh, refresh}) => {
+
+  const [foods, setFoods ] = useState()
+
+useEffect(()=>{
+  foodAPIData()
+  .then((foodArray) => {
+    setFoods(foodArray)
+  })
+}, [])
+
+    const updateFoodState = () => {
+    return foodAPIData()
+    .then((foodArray) => {
+      setFoods(foodArray)
+    })
+  }
+
     return (
         <>
         <section class="h-100 h-custom" style={{backgroundColor: 'gainsboro'}}>
@@ -24,7 +43,7 @@ export default function MenuComponents() {
   <div class="card-body">
   <div class="tab-content">
                 <div class="tab-pane fade show active" id="food">
-                    <FoodSelects/>
+                    <FoodSelects setRefresh={setRefresh} refresh={refresh} updateFoodState={updateFoodState}/>
                 </div>
                 <div class="tab-pane fade" id="drinks">
                     <DrinkSelects/>

@@ -1,17 +1,27 @@
 import { useState } from 'react';
+import { foodAPIData } from '../componentsAPImanager';
 
-export const  EditFoodButton = ({food}) => {
+export const  EditFoodButton = ({food, setFoods}) => {
   const [updatedFood, setUpdatedFood] = useState(food)
 
 const editFood = (e) => {
   e.preventDefault()
+
+  const foodToSend = {...updatedFood}
+
     fetch(`http://localhost:8088/foods/${food.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updatedFood),
+      body: JSON.stringify(foodToSend),
     }).then((response) => response.json())
+    .then(() => {
+      foodAPIData()
+      .then((foodArray) => {
+        setFoods(foodArray)
+      })
+    })
   };
 
 const handleControlledInputChange = (e) => {
@@ -36,7 +46,7 @@ const handleControlledInputChange = (e) => {
                   <input type="text" id="price" placeholder="price" onChange={handleControlledInputChange} defaultValue={food.price} /><br></br>
                   <input type="text" id="image" placeholder="imageURL" onChange={handleControlledInputChange} defaultValue={food.image} /><br></br>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit"  class="btn btn-primary">Save changes</button>
+                <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
               </form>
             </div>
           </div>

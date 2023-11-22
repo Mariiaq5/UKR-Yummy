@@ -6,7 +6,7 @@ import { DeleteCartFoodButton } from '../deleteItems/cartDeleteFood';
 import { DeleteCartDrinkButton } from '../deleteItems/cartDeleteDrink';
 import { DeleteCartDessertButton } from '../deleteItems/cartDeleteDessert';
 import { EmptyCartButton } from '../deleteItems/emptyCart';
-export default function CartPic() {
+export default function CartPic({refresh}) {
 
   const [foodState, updateFood] = useState([])
   const [drinkState, updateDrink] = useState([])
@@ -19,9 +19,13 @@ export default function CartPic() {
     .then((drinkArray) => updateDrink(drinkArray))
     .then( dessertOrdersAPIData)
     .then((dessertArray) => updateDessert(dessertArray))
-  }, []
+  }, [refresh]
   )
 
+  const updateFoodState = () => {
+    return foodOrdersAPIData()
+    .then((foodArray) => updateFood(foodArray))
+  }
 
   /*document.querySelectorAll('button')
   .forEach(button=>button.addEventListener('click', e=> {
@@ -77,7 +81,7 @@ export default function CartPic() {
                              class="form-control form-control-sm" /></div>
                           <div className='price'>
                           <p>${singleFood?.food?.price}</p>
-                          <DeleteCartFoodButton  id={singleFood.orderId}/>
+                          <DeleteCartFoodButton key={singleFood.id} id={singleFood.id} updateFoodState={updateFoodState}/>
                           </div>  
                        </div>                 
                        </> 
@@ -102,7 +106,7 @@ export default function CartPic() {
                              class="form-control form-control-sm" /></div>
                           <div className='price'>
                           <p>${singleDrink?.drink?.price}</p>
-                          <DeleteCartDrinkButton id={singleDrink.orderId}/>
+                          <DeleteCartDrinkButton id={singleDrink.id}/>
                           </div>  
                        </div>                 
                        </> 
@@ -127,7 +131,7 @@ export default function CartPic() {
                              </div>
                           <div className='price'>
                           <p>${singleDessert?.dessert?.price}</p>
-                          <DeleteCartDessertButton id={singleDessert.orderId}/>
+                          <DeleteCartDessertButton id={singleDessert.id}/>
                           </div>  
                        </div>                 
                        </> 
