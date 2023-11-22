@@ -6,8 +6,9 @@ import './menuComponents.css'
 export default function MenuComponents() {
     return (
         <>
-        <div class="card text-center">
-  <div class="card-header">
+        <section class="h-100 h-custom" style={{backgroundColor: 'gainsboro'}}>
+        <div class="card text-center" className='text0'>
+  <div class="card-header" className='header01'>
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
         <a class="nav-link active" aria-current="true" href="#food" data-bs-toggle="tab">Food</a>
@@ -38,6 +39,7 @@ export default function MenuComponents() {
             </div>
         </div>
   </div>
+  </section>
   </>
     );
 }
