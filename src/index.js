@@ -7,10 +7,12 @@ import PicInfo from './components/picInfo/picInfo';
 import MenuComponents from './components/menuComponents/menuComponents';
 import CartPic from './components/cartPic/cartPic';
 import SloganWord from './components/sloganWord/sloganWord';
+import AdminMenuContainer from './components/adminMenu/adminMenu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <AdminMenuContainer />
     <div className='components'>
     <NameHeader/>
     <PicInfo/>

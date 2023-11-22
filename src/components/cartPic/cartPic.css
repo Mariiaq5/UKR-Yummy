@@ -1,5 +1,50 @@
 .CartPic {
-    border: 2px solid green;
+    border: 2px solid gainsboro;
     padding: 1rem;
     margin: 1em;
+    background-color: gainsboro;
+}
+
+.example {
+border: 1px solid black;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    background: #1A1423;
+    background-color: #372549;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 25px 49px;
+    border-radius: 7px;
+    min-width: 142px;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+.CustomInfo {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    position: absolute;
+    top: 200px;
+    right:120px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.placeOrderButt {
+    background-color: blue;
+    
+    flex-direction: column-reverse;
+    justify-content: space-around;
 }

@@ -1,5 +1,14 @@
 .NameHeader {
-    border: 2px solid yellow;
     padding: 1rem;
     margin: 1em;
+    background-repeat: repeat;
+    background-size: 20%;
+    background-image: url("https://st2.depositphotos.com/4486149/12129/v/450/depositphotos_121295896-stock-illustration-black-and-white-seamless-ethnic.jpg"); 
+}
+
+.NameRestor {
+    color: black;
+    text-align: center;
+    background-color: gainsboro;
+    margin: 0rem 41%;
 }

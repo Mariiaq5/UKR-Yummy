@@ -1,5 +1,9 @@
 .PicInfo {
-    border: 2px solid blue;
-    padding: 1rem;
-    margin: 1em;
+  display: flex;
+  margin: 2em; 
+}
+
+.pic4Info{
+  width: 30%;
+  height: 20em;
 }
