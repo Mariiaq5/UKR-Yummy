@@ -2,22 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NameHeader from './components/nameHeader/nameHeader';
-import PicInfo from './components/picInfo/picInfo';
-import MenuComponents from './components/menuComponents/menuComponents';
-import CartPic from './components/cartPic/cartPic';
-import SloganWord from './components/sloganWord/sloganWord';
+import { MenuContainer } from './MenuContainer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='components'>
-    <NameHeader/>
-    <PicInfo/>
-    <MenuComponents/>
-    <CartPic/>
-    <SloganWord/>
-    </div>
+    <MenuContainer/>
   </React.StrictMode>
 );
 

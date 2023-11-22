@@ -49,25 +49,25 @@ export const foodAPIData = () => {
                         };
 
                         export const deleteCartFood = (id) => {
-                            return fetch(`http://localhost:8088/foodOrders?/${id}`, {
+                            return fetch(`http://localhost:8088/foodOrders/${id}`, {
                                 method: "DELETE"
                             });
                         };
 
                         export const deleteCartDrink = (id) => {
-                            return fetch(`http://localhost:8088/drinkOrders?/${id}`, {
+                            return fetch(`http://localhost:8088/drinkOrders/${id}`, {
                                 method: "DELETE"
                             });
                         };
 
                         export const deleteCartDessert = (id) => {
-                            return fetch(`http://localhost:8088/dessertOrders?/${id}`, {
+                            return fetch(`http://localhost:8088/dessertOrders/${id}`, {
                                 method: "DELETE"
                             });
                         };
 
                         export const emptyCartItemsDelete = (id) => {
-                            return fetch(`http://localhost:8088/orders?/${id}`, {
+                            return fetch(`http://localhost:8088/orders/${id}`, {
                                 method: "DELETE"
                             });
                         };

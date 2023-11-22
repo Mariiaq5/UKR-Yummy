@@ -22,8 +22,8 @@ export default function AdminFood() {
             <h5 class="card-title">{food.name}</h5>
             <p class="card-text">{food.desc}</p>
             <p class="card-text">${food.price}</p>
-            <DeleteFoodButton id={food.id}/>
-            <EditFoodButton key={food.id} food={food}/>
+            <DeleteFoodButton key={food.id} id={food.id}/>
+            <EditFoodButton key={food.id} food={food} setFoods={setFoods}/>
              </div>
             </div>
             </div>

@@ -10,12 +10,6 @@ import SloganWord from './components/sloganWord/sloganWord';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='components'>
-    <NameHeader/>
-    <PicInfo/>
-    <MenuComponents/>
-    <CartPic/>
-    <SloganWord/>
-    </div>
+   
   </React.StrictMode>
 );
