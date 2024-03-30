@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { foodAPIData } from "../componentsAPImanager";
-import OrderFoodButton from "../orderButton/orderFood";
 
 
 export default function FoodSelects({updateFoodState, setRefresh, refresh}) {

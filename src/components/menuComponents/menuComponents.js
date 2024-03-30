@@ -3,7 +3,7 @@ import DessertSelects from '../menuSelects/dessertSelects';
 import DrinkSelects from '../menuSelects/drinkSelects';
 import FoodSelects from '../menuSelects/foodSelects';
 import './menuComponents.css'
-import { foodAPIData } from '../componentsAPImanager';
+import { dessertsAPIData, drinksAPIData, foodAPIData } from '../componentsAPImanager';
 
 export const MenuComponents= ({setRefresh, refresh}) => {
 
@@ -20,6 +20,38 @@ useEffect(()=>{
     return foodAPIData()
     .then((foodArray) => {
       setFoods(foodArray)
+    })
+  }
+
+  const [drink, setDrink ] = useState()
+
+useEffect(()=>{
+  drinksAPIData()
+  .then((drinkArray) => {
+    setDrink(drinkArray)
+  })
+}, [])
+
+    const updateDrinkState = () => {
+    return drinksAPIData()
+    .then((drinkArray) => {
+      setDrink(drinkArray)
+    })
+  }
+
+  const [dessert, setDessert ] = useState()
+
+useEffect(()=>{
+  dessertsAPIData()
+  .then((dessertArray) => {
+    setDessert(dessertArray)
+  })
+}, [])
+
+    const updateDessertState = () => {
+    return dessertsAPIData()
+    .then((dessertArray) => {
+      setDessert(dessertArray)
     })
   }
 
@@ -46,10 +78,10 @@ useEffect(()=>{
                     <FoodSelects setRefresh={setRefresh} refresh={refresh} updateFoodState={updateFoodState}/>
                 </div>
                 <div class="tab-pane fade" id="drinks">
-                    <DrinkSelects/>
+                    <DrinkSelects setRefresh={setRefresh} refresh={refresh} updateDrinkState={updateDrinkState}/>
                 </div>
                 <div class="tab-pane fade vh-20 overflow-auto" id="desserts">
-                    <DessertSelects/>
+                    <DessertSelects setRefresh={setRefresh} refresh={refresh} updateDessertState={updateDessertState}/>
                     <div className="dessert">
                     </div>
                     <div className="dessert">

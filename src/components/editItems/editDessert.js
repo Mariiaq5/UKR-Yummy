@@ -1,17 +1,27 @@
 import { useState } from 'react';
+import { dessertsAPIData } from '../componentsAPImanager';
 
-export const  EditDessertButton = ({desserts}) => {
+export const  EditDessertButton = ({desserts, setDessert}) => {
   const [updatedDessert, setUpdatedDessert] = useState(desserts)
 
 const editDessert = (e) => {
   e.preventDefault()
+
+  const dessertToSend = {...updatedDessert}
+
     fetch(`http://localhost:8088/desserts/${desserts.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updatedDessert),
+      body: JSON.stringify(dessertToSend),
     }).then((response) => response.json())
+    .then(() => {
+      dessertsAPIData()
+      .then((dessertArray) => {
+        setDessert(dessertArray)
+      })
+    })
   };
 
 const handleControlledInputChange = (e) => {

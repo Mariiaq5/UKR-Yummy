@@ -25,7 +25,7 @@ export default function AdminDrinks() {
         <p class="card-text">{drinks.desc}</p>
         <p class="card-text">${drinks.price}</p>
         <DeleteDrinkButton id={drinks.id}/>
-        <EditDrinkButton key={drinks.id} drinks={drinks}/>
+        <EditDrinkButton key={drinks.id} drinks={drinks} setDrink={setDrink}/>
          </div>
         </div>
         </div>
