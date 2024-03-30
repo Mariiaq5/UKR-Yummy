@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { drinksAPIData } from "../componentsAPImanager";
 
 
-export default function DrinkSelects() {
+export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
   const [drink, setDrink] = useState([]);
 
   useEffect(() => {
@@ -21,6 +21,15 @@ export default function DrinkSelects() {
         body: JSON.stringify({ drinkId: drinks.id, orderId: 1 }), // Adjust the body based on your server requirements
       })
         .then((response) => response.json())
+        .then(() => {
+          drinksAPIData()
+          .then((drinkArray) => {
+           
+            let number =refresh + 1
+            setRefresh(number)
+            updateDrinkState(drinkArray)
+          })
+        })
   }
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
