@@ -16,15 +16,12 @@ const editDrink = (e) => {
       },
       
       body: JSON.stringify(updatedDrink),
-    }).then((response) => response.json());
-    window.location.reload()
-  
-      body: JSON.stringify(drinkToSend),
     }).then((response) => response.json())
     .then(() => {
       drinksAPIData()
       .then((drinkArray) => {
         setDrink(drinkArray)
+        window.location.reload()
       })
     })
   };

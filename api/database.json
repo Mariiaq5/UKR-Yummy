@@ -230,7 +230,7 @@
       "id": 9,
       "name": "Tubes with condensed milk",
       "desc": "Waffle tubes with condensed milk inside",
-      "price": "4.8",
+      "price": 4.6,
       "image": "https://lifestylemedia.biz/wp-content/uploads/2022/05/krem-dlya-vafelnikh-trubochok-768x512.jpg"
     },
     {
@@ -267,7 +267,7 @@
       "id": 4,
       "name": "Roses petals",
       "desc": "Fresh green tea with roses petals",
-      "price": "3.5",
+      "price": 3.4,
       "image": "https://pixelinform.com/wp-content/uploads/2022/07/green_tea_recipe.jpg"
     },
     {
@@ -365,47 +365,9 @@
       "phone": "681-428-9631"
     }
   ],
-
   "foodOrders": [],
   "drinkOrders": [],
   "dessertOrders": [],
-  "foodOrders": [
-    {
-      "foodId": 1,
-      "orderId": 1,
-      "id": 1
-    },
-    {
-      "foodId": 11,
-      "orderId": 1,
-      "id": 3
-    },
-    {
-      "foodId": 20,
-      "orderId": 1,
-      "id": 4
-    }
-  ],
-  "drinkOrders": [
-    {
-      "drinkId": 4,
-      "orderId": 1,
-      "id": 1
-    },
-    {
-      "drinkId": 5,
-      "orderId": 1,
-      "id": 2
-    }
-  ],
-  "dessertOrders": [
-    {
-      "dessertId": 1,
-      "orderId": 1,
-      "id": 1
-    }
-  ],
-
   "orders": [
     {
       "id": 1,

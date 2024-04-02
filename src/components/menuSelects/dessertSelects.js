@@ -11,8 +11,9 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
       setDessert(dessertArray)
     })
   }, [])
+  
 
-  /*const addDessertToCart = (desserts) => {
+        /*const addDessertToCart = (desserts) => {
     fetch('http://localhost:8088/dessertOrders', {
         method: 'POST',
         headers: {
@@ -23,9 +24,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
         .then((response) => response.json())
 
   }*/
-  
-
-      .then(() => {
+     /* .then(() => {
         dessertsAPIData()
         .then((dessertArray) => {
          
@@ -33,8 +32,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
           setRefresh(number)
           updateDessertState(dessertArray)
         })
-      })
-  }
+      }) */
 
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
@@ -55,4 +53,4 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
       </div>
       </div>
     ) 
-}
+  }

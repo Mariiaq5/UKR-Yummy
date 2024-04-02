@@ -16,15 +16,12 @@ const editDessert = (e) => {
       },
 
       body: JSON.stringify(updatedDessert),
-    }).then((response) => response.json());
-    window.location.reload()
-
-      body: JSON.stringify(dessertToSend),
     }).then((response) => response.json())
     .then(() => {
       dessertsAPIData()
       .then((dessertArray) => {
         setDessert(dessertArray)
+        window.location.reload()
       })
     })
 

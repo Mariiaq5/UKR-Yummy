@@ -12,7 +12,7 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
     })
   }, [])
 
- /* const addDrinkToCart = (drinks) => {
+           /* const addDrinkToCart = (drinks) => {
     fetch('http://localhost:8088/drinkOrders', {
         method: 'POST',
         headers: {
@@ -23,8 +23,7 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
         .then((response) => response.json())
 
   }*/
-
-        .then(() => {
+       /* .then(() => {
           drinksAPIData()
           .then((drinkArray) => {
            
@@ -32,8 +31,8 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
             setRefresh(number)
             updateDrinkState(drinkArray)
           })
-        })
-  }
+        }) */
+
 
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
@@ -54,4 +53,4 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
       </div>
       </div>
     ) 
-}
+  }
