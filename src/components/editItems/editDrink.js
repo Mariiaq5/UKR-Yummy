@@ -11,7 +11,8 @@ const editDrink = (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(updatedDrink),
-    }).then((response) => response.json())
+    }).then((response) => response.json());
+    window.location.reload()
   };
 
 const handleControlledInputChange = (e) => {

@@ -4,6 +4,12 @@
 }
 
 .pic4Info{
-  width: 30%;
-  height: 20em;
+  width: 65em;
+  height: 15em;
+  border-radius: 20%;
+  overflow: hidden; /* Ensures the image doesn't spill outside the border-radius */
+  justify-content: center; /* Horizontally center the content (for non-square images) */
+  align-items: center; /* Vertically center the content (for non-square images) */
+  object-fit: cover;
+  margin: 2em;
 }

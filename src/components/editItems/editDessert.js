@@ -11,7 +11,8 @@ const editDessert = (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(updatedDessert),
-    }).then((response) => response.json())
+    }).then((response) => response.json());
+    window.location.reload()
   };
 
 const handleControlledInputChange = (e) => {

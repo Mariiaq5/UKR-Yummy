@@ -20,6 +20,7 @@ const editFood = (e) => {
       foodAPIData()
       .then((foodArray) => {
         setFoods(foodArray)
+        window.location.reload()
       })
     })
   };
