@@ -1,18 +1,32 @@
 import { useState } from 'react';
+import { drinksAPIData } from '../componentsAPImanager';
 
-export const  EditDrinkButton = ({drinks}) => {
+export const  EditDrinkButton = ({drinks, setDrink}) => {
   const [updatedDrink, setUpdatedDrink] = useState(drinks)
 
 const editDrink = (e) => {
   e.preventDefault()
+
+  const drinkToSend = {...updatedDrink}
+
     fetch(`http://localhost:8088/drinks/${drinks.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
+      
       body: JSON.stringify(updatedDrink),
     }).then((response) => response.json());
     window.location.reload()
+  
+      body: JSON.stringify(drinkToSend),
+    }).then((response) => response.json())
+    .then(() => {
+      drinksAPIData()
+      .then((drinkArray) => {
+        setDrink(drinkArray)
+      })
+    })
   };
 
 const handleControlledInputChange = (e) => {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { dessertsAPIData } from "../componentsAPImanager";
 
 
-export default function DessertSelects() {
+export default function DessertSelects({updateDessertState, setRefresh, refresh}) {
   const [dessert, setDessert] = useState([]);
 
   useEffect(() => {
@@ -21,8 +21,21 @@ export default function DessertSelects() {
         body: JSON.stringify({ dessertId: desserts.id, orderId: 1 }), // Adjust the body based on your server requirements
       })
         .then((response) => response.json())
+
   }*/
   
+
+      .then(() => {
+        dessertsAPIData()
+        .then((dessertArray) => {
+         
+          let number =refresh + 1
+          setRefresh(number)
+          updateDessertState(dessertArray)
+        })
+      })
+  }
+
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <div className="div1">
