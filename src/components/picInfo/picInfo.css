@@ -1,15 +1,17 @@
 .PicInfo {
   display: flex;
-  margin: 2em; 
+  margin: 1em; 
+  font-size: small;
 }
 
 .pic4Info{
   width: 65em;
   height: 15em;
-  border-radius: 20%;
-  overflow: hidden; /* Ensures the image doesn't spill outside the border-radius */
-  justify-content: center; /* Horizontally center the content (for non-square images) */
-  align-items: center; /* Vertically center the content (for non-square images) */
+  border-radius: 15%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center; 
   object-fit: cover;
   margin: 2em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
