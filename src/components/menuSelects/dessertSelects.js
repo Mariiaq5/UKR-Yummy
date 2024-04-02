@@ -12,7 +12,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
     })
   }, [])
 
-  const addDessertToCart = (desserts) => {
+  /*const addDessertToCart = (desserts) => {
     fetch('http://localhost:8088/dessertOrders', {
         method: 'POST',
         headers: {
@@ -21,6 +21,10 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
         body: JSON.stringify({ dessertId: desserts.id, orderId: 1 }), // Adjust the body based on your server requirements
       })
         .then((response) => response.json())
+
+  }*/
+  
+
       .then(() => {
         dessertsAPIData()
         .then((dessertArray) => {
@@ -31,6 +35,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
         })
       })
   }
+
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <div className="div1">
@@ -42,7 +47,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
       <h5 class="card-title">{desserts.name}</h5>
       <p class="card-text">{desserts.desc}</p>
        <p class="card-text">${desserts.price}</p>
-       <button onClick={() => addDessertToCart(desserts)}>Add to cart</button>
+       {/*<button onClick={() => addDessertToCart(desserts)}>Add to cart</button>*/}
        </div>
       </div>
       </div>

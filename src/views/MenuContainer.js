@@ -15,7 +15,7 @@ const [refresh, setRefresh] = useState(0)
         <NameHeader/>
         <PicInfo/>
         <MenuComponents refresh={refresh} setRefresh={setRefresh}/>
-        <CartPic refresh={refresh}/>
+        {/*<CartPic refresh={refresh}/>*/}
         <SloganWord/>
         </div>
     )

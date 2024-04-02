@@ -12,7 +12,7 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
     })
   }, [])
 
-  const addDrinkToCart = (drinks) => {
+ /* const addDrinkToCart = (drinks) => {
     fetch('http://localhost:8088/drinkOrders', {
         method: 'POST',
         headers: {
@@ -21,6 +21,9 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
         body: JSON.stringify({ drinkId: drinks.id, orderId: 1 }), // Adjust the body based on your server requirements
       })
         .then((response) => response.json())
+
+  }*/
+
         .then(() => {
           drinksAPIData()
           .then((drinkArray) => {
@@ -31,18 +34,19 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
           })
         })
   }
+
     return(
       <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <div className="div1">
           {drink.map((drinks) =>
           <div href="simple-list-drinks" className="div3">
           <div class="card" className="card1">
-  <img style={{width: '10em', height: '10em'}} src={drinks.image} class="card-img-top" alt="..." className="sizeImgMenu"/>
+  <img style={{width: '10em', height: '10em', objectFit: 'fill'}} src={drinks.image} class="card-img-top" alt="..." className="sizeImgMenu"/>
       <div class="card-body">
       <h5 class="card-title">{drinks.name}</h5>
       <p class="card-text">{drinks.desc}</p>
        <p class="card-text">${drinks.price}</p>
-       <button onClick={() => addDrinkToCart(drinks)}>Add to cart</button>
+       {/*<button onClick={() => addDrinkToCart(drinks)}>Add to cart</button>*/}
        </div>
       </div>
       </div>

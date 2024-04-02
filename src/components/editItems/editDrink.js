@@ -14,6 +14,11 @@ const editDrink = (e) => {
       headers: {
         "Content-Type": "application/json",
       },
+      
+      body: JSON.stringify(updatedDrink),
+    }).then((response) => response.json());
+    window.location.reload()
+  
       body: JSON.stringify(drinkToSend),
     }).then((response) => response.json())
     .then(() => {

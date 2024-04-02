@@ -14,6 +14,11 @@ const editDessert = (e) => {
       headers: {
         "Content-Type": "application/json",
       },
+
+      body: JSON.stringify(updatedDessert),
+    }).then((response) => response.json());
+    window.location.reload()
+
       body: JSON.stringify(dessertToSend),
     }).then((response) => response.json())
     .then(() => {
@@ -22,6 +27,7 @@ const editDessert = (e) => {
         setDessert(dessertArray)
       })
     })
+
   };
 
 const handleControlledInputChange = (e) => {
