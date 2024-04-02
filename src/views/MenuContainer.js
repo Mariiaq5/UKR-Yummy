@@ -5,6 +5,7 @@ import { MenuComponents } from '../components/menuComponents/menuComponents';
 //import CartPic from '../components/cartPic/cartPic';
 import SloganWord from '../components/sloganWord/sloganWord';
 import AdminMenuContainer from '../components/adminMenu/adminMenu';
+import Infoabout from '../components/sloganWord/Infoabout';
 
 
 export const MenuContainer=() => {
@@ -12,8 +13,8 @@ const [refresh, setRefresh] = useState(0)
 const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
 
 const authenticateAdmin = () => {
-    const password = prompt("Please enter the admin password:"); // Simple prompt for password input
-    const correctPassword = "24081991"; // This should be more securely handled in a real application
+    const password = prompt("Please enter the admin password:");
+    const correctPassword = "24081991"; //password access to admin menu
 
     if (password === correctPassword) {
         setIsAdminAuthenticated(true);
@@ -38,6 +39,7 @@ const authenticateAdmin = () => {
                 <MenuComponents refresh={refresh} setRefresh={setRefresh}/>
                 {/* <CartPic refresh={refresh}/> */}
                 <SloganWord/>
+                <Infoabout/>
             </div>
         </>
     )
