@@ -2,12 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NameHeader from './components/nameHeader/nameHeader';
-import PicInfo from './components/picInfo/picInfo';
-import MenuComponents from './components/menuComponents/menuComponents';
-import CartPic from './components/cartPic/cartPic';
-import SloganWord from './components/sloganWord/sloganWord';
-import AdminMenuContainer from './components/adminMenu/adminMenu';
 import { MenuContainer } from './views/MenuContainer';
 
 
@@ -15,7 +9,6 @@ import { MenuContainer } from './views/MenuContainer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AdminMenuContainer />
     <MenuContainer/>
   </React.StrictMode>
 );
