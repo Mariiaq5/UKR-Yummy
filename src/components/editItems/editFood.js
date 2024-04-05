@@ -20,7 +20,7 @@ const editFood = (e) => {
       foodAPIData()
       .then((foodArray) => {
         setFoods(foodArray)
-        window.location.reload()
+        //window.location.reload()
       })
     })
   };
@@ -31,7 +31,7 @@ const handleControlledInputChange = (e) => {
   setUpdatedFood(copyUpdatedFood)
 }
     return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#food-update-button-${food.id}`}>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#food-update-button-${food.id}`}>
           Edit food
         </button>
         <div class="modal fade" id={`food-update-button-${food.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

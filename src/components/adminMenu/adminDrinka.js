@@ -19,7 +19,7 @@ export default function AdminDrinks() {
         <div className="div1">
             {drink.map((drinks) =>
             <div href="simple-list-drinks" className="div3">
-            <div class="card" className="card1">
+            <div class="card" className="card1" style={{backgroundColor: 'antiquewhite'}}>
         <div class="card-body">
         <h5 class="card-title">{drinks.name}</h5>
         <p class="card-text">{drinks.desc}</p>

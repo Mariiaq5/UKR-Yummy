@@ -9,9 +9,9 @@ import AdminFood from "./adminFood";
 export default function AdminMenuContainer() {
 return(
     <>
-        <section class="h-100 h-custom" style={{backgroundColor: 'gainsboro'}}>
+        <section class="h-100 h-custom">
         <div class="card text-center" className='text0'>
-  <div class="card-header" className='header01'>
+  <div class="card-header" className='header01' style={{backgroundColor: 'grey'}}>
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
         <a class="nav-link active" aria-current="true" href="#adminFood" data-bs-toggle="tab">Food</a>
