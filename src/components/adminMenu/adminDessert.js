@@ -18,7 +18,7 @@ export default function AdminDesserts() {
         <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <div className="div1">
              {dessert.map((desserts) =>
-            <div href="simple-list-desserts" className="div3">
+            <div href="simple-list-desserts" className="div3" style={{backgroundColor: 'antiquewhite'}}>
             <div class="card" className="card1">
         <div class="card-body">
         <h5 class="card-title">{desserts.name}</h5>

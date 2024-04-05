@@ -10,6 +10,6 @@ export const DeletedessertButton = ({id}) => {
         .then(pageReload())
     };
     return (
-        <button class="btn btn-primary" onClick={handleDelete}>Delete Dessert</button>
+        <button class="btn btn-danger" onClick={handleDelete}>Delete Dessert</button>
     )
 }

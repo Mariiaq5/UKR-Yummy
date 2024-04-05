@@ -9,6 +9,6 @@ export const DeleteFoodButton = ({id}) => {
         .then(pageReload())
     };
     return (
-        <button class="btn btn-primary" onClick={handleDelete}>Delete Food</button>
+        <button class="btn btn-danger" onClick={handleDelete}>Delete Food</button>
     )
 }

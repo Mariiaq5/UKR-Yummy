@@ -29,7 +29,7 @@ export default function CreateDessertButton() {
         window.location.reload();
       }
       return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-dessert-container">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-dessert-container">
           Add New Dessert
         </button>
         <div class="modal fade" id="add-dessert-container" tabindex="-1" aria-labelledby="add-dessert-container" aria-hidden="true">

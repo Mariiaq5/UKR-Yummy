@@ -39,7 +39,7 @@ export default function DessertSelects({updateDessertState, setRefresh, refresh}
       <div className="div1">
            {dessert.map((desserts) =>
           <div href="simple-list-desserts" className="div3">
-          <div class="card" className="card1">
+          <div class="card" className="card1"  style={{backgroundColor: 'antiquewhite'}}>
   <img style={{width: '10em', height: '10em'}} src={desserts.image} class="card-img-top" alt="..." className="sizeImgMenu"/>
       <div class="card-body">
       <h5 class="card-title">{desserts.name}</h5>

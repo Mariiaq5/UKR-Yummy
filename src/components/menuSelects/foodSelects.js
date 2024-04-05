@@ -38,7 +38,7 @@ export default function FoodSelects({updateFoodState, setRefresh, refresh}) {
            <div className="div1">
           {foods.map((food) =>
           <div href="simple-list-food" className="div3">
-          <div class="card" className="card1">
+          <div class="card" className="card1"  style={{backgroundColor: 'antiquewhite'}}>
          <img  style={{width: '10em', height: '10em'}} src={food.image} class="card-img-top" alt="..." className="sizeImgMenu"/>
       <div class="card-body">
       <h5 class="card-title">{food.name}</h5>

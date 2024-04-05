@@ -1,5 +1,21 @@
 body {
-  background-color: gainsboro;
+  position: relative;
+  margin: 0;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://wallpapercave.com/wp/wp1961571.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
 
 

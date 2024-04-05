@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Borsch",
       "desc": "Traditional Ukrainian dish with chicken, beef, vegetables and seasonings. Served with sour cream and garlic pampushka",
-      "price": 9.5,
+      "price": "8.5",
       "image": "http://www.olgasflavorfactory.com/wp-content/uploads/2011/11/IMG_2578-1024x682.jpg",
       "preptime": 10
     },
@@ -138,7 +138,7 @@
     },
     {
       "id": 18,
-      "name": "Budz cheese3",
+      "name": "Budz cheese",
       "desc": "Smoked goat cheese, served with cranberry jam",
       "price": 5.5,
       "image": "https://www.seriouseats.com/thmb/ZWNuvwrK19-kmUusEvLIileL5h0=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2015__02__20150206-northeast-cheese-vicky-wasik-cato-corner-hooligan-2-c7345917021a413db3cb06a651d6b8af.jpg",
@@ -358,7 +358,6 @@
       "password": "24081991",
       "phone": "304-579-2204"
     }
-
   ],
   "foodOrders": [],
   "drinkOrders": [],

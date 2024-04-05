@@ -30,7 +30,7 @@ export default function CreateFoodButton() {
         window.location.reload();
       }
       return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-food-container">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-food-container">
           Add New Food
         </button>
         <div class="modal fade" id="add-food-container" tabindex="-1" aria-labelledby="add-food-container" aria-hidden="true">

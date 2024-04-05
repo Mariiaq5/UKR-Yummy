@@ -28,10 +28,10 @@ const authenticateAdmin = () => {
     return (<>
             {isAdminAuthenticated ? ( <>
                 <AdminMenuContainer/>
-                <button onClick={hideAdminMenu}>Hide it</button> 
+                <button style={{ backgroundColor: 'grey', color: 'orange'}} onClick={hideAdminMenu}>Hide it</button> 
                 </>
             ) : (
-                <button onClick={authenticateAdmin}>Admin Menu</button>
+                <button style={{ backgroundColor: 'grey', color: 'orange' }} onClick={authenticateAdmin}>Admin Menu</button>
             )}
             <div className='components'>
                 <NameHeader/>

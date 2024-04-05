@@ -21,7 +21,7 @@ const editDessert = (e) => {
       dessertsAPIData()
       .then((dessertArray) => {
         setDessert(dessertArray)
-        window.location.reload()
+        //window.location.reload()
       })
     })
 
@@ -33,7 +33,7 @@ const handleControlledInputChange = (e) => {
   setUpdatedDessert(copyUpdatedDessert)
 }
     return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#dessert-update-button-${desserts.id}`}>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#dessert-update-button-${desserts.id}`}>
           Edit dessert
         </button>
         <div class="modal fade" id={`dessert-update-button-${desserts.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

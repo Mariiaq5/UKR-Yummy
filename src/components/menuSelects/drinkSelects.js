@@ -39,7 +39,7 @@ export default function DrinkSelects({updateDrinkState, setRefresh, refresh}) {
       <div className="div1">
           {drink.map((drinks) =>
           <div href="simple-list-drinks" className="div3">
-          <div class="card" className="card1">
+          <div class="card" className="card1"  style={{backgroundColor: 'antiquewhite'}}>
   <img style={{width: '10em', height: '10em', objectFit: 'fill'}} src={drinks.image} class="card-img-top" alt="..." className="sizeImgMenu"/>
       <div class="card-body">
       <h5 class="card-title">{drinks.name}</h5>

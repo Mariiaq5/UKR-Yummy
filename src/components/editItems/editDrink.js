@@ -21,7 +21,7 @@ const editDrink = (e) => {
       drinksAPIData()
       .then((drinkArray) => {
         setDrink(drinkArray)
-        window.location.reload()
+        //window.location.reload()
       })
     })
   };
@@ -32,7 +32,7 @@ const handleControlledInputChange = (e) => {
   setUpdatedDrink(copyUpdatedDrink)
 }
     return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#drink-update-button-${drinks.id}`}>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#drink-update-button-${drinks.id}`}>
           Edit Drink
         </button>
         <div class="modal fade" id={`drink-update-button-${drinks.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

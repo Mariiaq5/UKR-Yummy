@@ -17,7 +17,7 @@ export default function AdminFood() {
                  <div className="div1">
                 {foods.map((food) =>
                 <div href="simple-list-food" className="div3">
-                <div class="card" className="card1">
+                <div class="card" className="card1" style={{backgroundColor: 'antiquewhite'}}>
             <div class="card-body">
             <h5 class="card-title">{food.name}</h5>
             <p class="card-text">{food.desc}</p>

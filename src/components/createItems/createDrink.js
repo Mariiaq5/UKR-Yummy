@@ -29,7 +29,7 @@ export default function CreateDrinkButton() {
         window.location.reload();
       }
       return (<>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-drink-container">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-drink-container">
           Add New Drink
         </button>
         <div class="modal fade" id="add-drink-container" tabindex="-1" aria-labelledby="add-drink-container" aria-hidden="true">
