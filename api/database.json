@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Borsch",
       "desc": "Traditional Ukrainian dish with chicken, beef, vegetables and seasonings. Served with sour cream and garlic pampushka",
-      "price": "8.5",
+      "price": "9.5",
       "image": "http://www.olgasflavorfactory.com/wp-content/uploads/2011/11/IMG_2578-1024x682.jpg",
       "preptime": 10
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "name": "Kotleta po-kyivsky",
       "desc": "Breaded chicken breasts stuffed with butter and dill inside.",
-      "price": 6.3,
+      "price": "6.5",
       "image": "https://zira.uz/wp-content/uploads/2018/09/kotleta-po-kievski-1.jpg",
       "preptime": 12
     },
@@ -138,7 +138,7 @@
     },
     {
       "id": 18,
-      "name": "Budz cheese",
+      "name": "Buds cheese",
       "desc": "Smoked goat cheese, served with cranberry jam",
       "price": 5.5,
       "image": "https://www.seriouseats.com/thmb/ZWNuvwrK19-kmUusEvLIileL5h0=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2015__02__20150206-northeast-cheese-vicky-wasik-cato-corner-hooligan-2-c7345917021a413db3cb06a651d6b8af.jpg",
@@ -181,7 +181,7 @@
       "id": 2,
       "name": "Syrnyki",
       "desc": "Sweet, cheesy pancakes",
-      "price": 6.5,
+      "price": "6.4",
       "image": "https://rud.ua/uploads/under_recipe/photo_24950.jpg"
     },
     {
@@ -239,6 +239,13 @@
       "desc": "One of the most popular desserts in classical Ukrainian cuisine. It is prepared from yeast or yeast-free dough and cheese. Served with fresh berries",
       "price": 5.8,
       "image": "https://spadok.org.ua/images/ariyi/gombovci-z-syrom.jpg"
+    },
+    {
+      "name": "Poppy seeds bun",
+      "desc": "Traditional bun with poppy seeds",
+      "price": "4.5",
+      "image": "https://nomadparadise.com/wp-content/uploads/2021/11/ukrainian-desserts-13-1080x720.jpg",
+      "id": 11
     }
   ],
   "drinks": [
@@ -265,9 +272,9 @@
     },
     {
       "id": 4,
-      "name": "Roses petals",
+      "name": "Rose petals",
       "desc": "Fresh green tea with roses petals",
-      "price": 3.4,
+      "price": "3.5",
       "image": "https://pixelinform.com/wp-content/uploads/2022/07/green_tea_recipe.jpg"
     },
     {
@@ -339,6 +346,13 @@
       "desc": "Ukrainian cherry liqueur based on vodka",
       "price": 7.5,
       "image": "https://nastanova.com/wp-content/uploads/2018/01/8200fbc0034dc0f145301edbac49d2a0.jpg"
+    },
+    {
+      "name": "Beer",
+      "desc": "Ukrainian beer. Made in Ukraine",
+      "price": "5",
+      "image": "https://chainlessbrew.com/wp-content/uploads/2023/01/pld-beer-ukraine-1024x768.jpeg",
+      "id": 15
     }
   ],
   "location": [

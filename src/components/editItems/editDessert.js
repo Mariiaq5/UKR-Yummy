@@ -49,7 +49,7 @@ const handleControlledInputChange = (e) => {
                   <input type="text" id="price" placeholder="price" onChange={handleControlledInputChange} defaultValue={desserts.price} /><br></br>
                   <input type="text" id="image" placeholder="imageURL" onChange={handleControlledInputChange} defaultValue={desserts.image} /><br></br>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit"  class="btn btn-primary">Save changes</button>
+                <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
               </form>
             </div>
           </div>

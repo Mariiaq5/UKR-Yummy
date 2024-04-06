@@ -31,6 +31,7 @@ const handleControlledInputChange = (e) => {
   copyUpdatedDrink[`${e.target.id}`] = e.target.value
   setUpdatedDrink(copyUpdatedDrink)
 }
+
     return (<>
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#drink-update-button-${drinks.id}`}>
           Edit Drink
@@ -48,7 +49,7 @@ const handleControlledInputChange = (e) => {
                   <input type="text" id="price" placeholder="price" onChange={handleControlledInputChange} defaultValue={drinks.price} /><br></br>
                   <input type="text" id="image" placeholder="imageURL" onChange={handleControlledInputChange} defaultValue={drinks.image} /><br></br>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit"  class="btn btn-primary">Save changes</button>
+                <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
               </form>
             </div>
           </div>
