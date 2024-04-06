@@ -24,11 +24,12 @@ const authenticateAdmin = () => {
 };
 
     const hideAdminMenu = () => setIsAdminAuthenticated(false);
+    const reloadPage = () => window.location.reload()
 
     return (<>
             {isAdminAuthenticated ? ( <>
                 <AdminMenuContainer/>
-                <button style={{ backgroundColor: 'grey', color: 'orange'}} onClick={hideAdminMenu}>Hide it</button> 
+                <button style={{ backgroundColor: 'grey', color: 'orange'}} onClick={reloadPage}>Hide and save changes</button> 
                 </>
             ) : (
                 <button style={{ backgroundColor: 'grey', color: 'orange' }} onClick={authenticateAdmin}>Admin Menu</button>

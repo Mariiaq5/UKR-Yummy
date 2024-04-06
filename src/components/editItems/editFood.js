@@ -30,6 +30,7 @@ const handleControlledInputChange = (e) => {
   copyUpdatedFood[`${e.target.id}`] = e.target.value
   setUpdatedFood(copyUpdatedFood)
 }
+
     return (<>
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target={`#food-update-button-${food.id}`}>
           Edit food
